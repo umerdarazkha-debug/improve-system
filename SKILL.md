@@ -1,11 +1,11 @@
 ---
 name: improve-system
-description: Read back through your past Claude Code sessions and improve your setup from them. Finds where Claude kept getting things wrong, what you had to explain twice, and jobs you keep doing by hand; then proposes CLAUDE.md rules, memories, new skills (written for you on approval) and automations. Local only, no account. Use when someone says "improve your system", "improve yourself", "review my sessions", "what skills should I build", "self-improve", "audit my setup" or "recap my week".
+description: Read back through your past Claude Code sessions and improve your setup from them. Finds where Claude kept getting things wrong, what you had to explain twice, and jobs you keep doing by hand; then proposes CLAUDE.md rules, memories, new skills (written for you on approval) and automations. No third-party service, no extra account. Use when someone says "improve your system", "improve yourself", "review my sessions", "what skills should I build", "self-improve", "audit my setup" or "recap my week".
 ---
 
 # /improve-system
 
-A free, local take on BuildPartner's `improve-system`. Everything stays on this machine: it reads `~/.claude/projects/*/*.jsonl` and setup files, sends nothing anywhere, and changes nothing until the user says yes. Tip for the user: Claude Code's built-in `/insights` gives a complementary HTML usage report; this skill goes further by writing the fixes.
+A free take on BuildPartner's `improve-system` with no third-party service and no extra account. The digest script reads `~/.claude/projects/*/*.jsonl` on this machine and makes no network calls; you then read the digest in this session like any other file. Nothing changes until the user says yes. Tip for the user: Claude Code's built-in `/insights` gives a complementary HTML usage report; this skill goes further by writing the fixes.
 
 ## Step 1: Build the digest
 

@@ -10,7 +10,7 @@ It finds three things:
 
 Then it writes the fixes for you, one at a time, only after you say yes.
 
-Everything runs on your machine. No account, no API key, no network calls.
+The script runs on your machine and makes no network calls. No third-party service, no extra account, no API key. Claude reads the result inside your normal Claude Code session.
 
 ## Install
 
@@ -81,12 +81,13 @@ node ~/.claude/skills/improve-system/digest.mjs --days 30 --out digest.md
 ## Privacy
 
 - `digest.mjs` only reads local files. It makes no network calls. It is 115 lines, so you can read all of it.
+- Claude reads the digest in your normal Claude Code session, so its contents go to Anthropic the same way anything else you show Claude does. Nothing goes to any other service.
 - The digest holds your own prompts, so keep it out of public folders.
 - Nothing in your setup changes until you approve that exact change.
 
 ## Credit
 
-Inspired by the `improve-system` command in the [BuildPartner plugin](https://github.com/austinmarchese/buildpartner-plugin). This is a separate local version with no account. Claude Code's built-in `/insights` report pairs well with it.
+Inspired by the `improve-system` command in the [BuildPartner plugin](https://github.com/austinmarchese/buildpartner-plugin). This is a separate version with no third-party service and no extra account. Claude Code's built-in `/insights` report pairs well with it.
 
 ## License
 
